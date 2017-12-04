@@ -24,7 +24,7 @@ before_script:
 before_script:
   - env | sort
   - cd "$VERSION"
-  - image="xutongle/docker-ubnt-wifidog:${WIFIDOG_VERSION}"
+  - image="xutl/docker-ubnt-wifidog:${WIFIDOG_VERSION}"
 
 script:
   - travis_retry docker build -t "$image" .
